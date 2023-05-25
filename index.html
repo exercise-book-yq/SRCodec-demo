@@ -1,0 +1,4298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="OlaWod">
+
+    <title>MUSHRA</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+	<!-- Custom scripts for this template -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<script>
+	function myFunction(){
+		var res = {};
+		var s = "";
+		var i = 1;
+        $("input[type='number']").each(function(){
+            var name = $(this).attr('name');
+            var value = $(this).val();
+            res[name]=value;
+			s = s + String(i) + "|" + String(name) + "|" + String(value) + "<br>";
+			i = i + 1;
+        });
+		console.log(res);
+		document.getElementById("result").innerHTML = s;
+	}
+	</script>
+
+</head>
+
+<body id="page-top">
+
+	
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+        <div class="container" style="padding-bottom:10px">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h1>SRCodec: Split-residual vector quantization for neural speech codec</h1>
+                        <p>We present samples for SRCodec, our proposed framwork. Read our paper for more details.</p>
+                        <p>We provide samples including four females and four males, randomly selected from our test set. We compare our proposed method with both traditional codecs and neural codecs, including Opus at 6 kbps and 9 kbps, Encodec at 3 kbps, Lyra-v1 at 3 kbps, and Lyra-v2 at 3.2 kbps, 6 kbps . The samples of Encodec are reported without Entropy Coding. All utterance signals are resampled to 16 kHz.</p> 
+						<p> Thanks for your listening!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-14 col-md-12 mx-auto">
+                		
+				
+                <div class="post-preview">
+                    <table class="table">
+                        <thead>
+                            <tr>
+								<th scope="col">ID</th>
+								<th scope="col">Methods</th>
+                                <th scope="col">Wav</th>
+								<th scope="col">Ground truth</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+								<td>
+									<b>p225_331_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p225_331_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p225_331_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p225_331_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_331_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p225_350_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p225_350_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p225_350_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p225_350_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_350_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p225_356_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p225_356_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p225_356_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p225_356_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p225_356_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p226_030_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p226_030_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p226_030_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p226_030_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_030_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p226_044_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p226_044_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p226_044_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p226_044_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p226_044_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p233_183_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p233_183_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p233_183_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p233_183_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_183_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p233_189_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p233_189_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p233_189_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p233_189_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p233_189_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p262_368_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p262_368_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p262_368_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p262_368_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_368_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p262_392_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p262_392_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p262_392_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p262_392_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p262_392_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p362_017_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p362_017_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p362_017_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p362_017_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_017_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p362_063_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p362_063_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p362_063_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p362_063_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_063_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p362_113_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p362_113_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p362_113_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p362_113_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p362_113_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p364_215_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p364_215_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p364_215_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p364_215_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_215_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p364_220_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p364_220_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p364_220_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p364_220_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p364_220_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p374_004_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p374_004_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p374_004_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p374_004_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_004_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p374_051_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p374_051_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p374_051_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p374_051_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_051_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p374_071_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p374_071_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p374_071_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p374_071_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p374_071_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p376_007_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p376_007_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p376_007_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p376_007_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_007_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p376_014_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p376_014_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p376_014_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p376_014_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_014_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b>p376_036_mic2</b>
+								</td>
+								<td>
+									SRCodec-0.95kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-1/p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-1.9kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-2/p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									SRCodec-3.8kbps
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="SRCodec-4/p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Encodec-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v1
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v1/p376_036_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-6k/p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Opus-9k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Opus-9k/p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Speex-4k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Speex-4k/p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-3k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-3k/p376_036_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                            <tr>
+								<td>
+									<b></b>
+								</td>
+								<td>
+									Lyra-v2-6k
+								</td>
+                                <td>
+                                    <audio controls preload="none">
+                                        <source src="Lyra-v2-6k/p376_036_mic2_decoded.wav">
+                                    </audio>
+                                </td>
+								<td>
+                                    <audio controls preload="none">
+                                        <source src="Target\p376_036_mic2.wav">
+                                    </audio>
+                                </td>
+                                
+                                
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+					<hr>
+                </div>
+                <hr>
+				
+				
+				
+				<hr>
+				
+            </div>
+        </div>
+		</div>
+
+
+</body>
+
+</html>
